@@ -1,26 +1,34 @@
-{% assign navigation = site.data.navigation[include.nav] %}
+
+
+{% assign sum = site.posts | size %}
 
 <nav class="nav__list">
-  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
-  <ul class="nav__items">
-    {% for nav in navigation %}
-      <li>
-        {% if nav.url %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
-        {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
-        {% endif %}
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
 
-        {% if nav.children != null %}
-        <ul>
-          {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
-    {% endfor %}
+      <li>
+        <span class="nav__sub-title">python</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "boj-python" %}
+                        <li><a href="/categories/boj-python" class="">백준 파이썬 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">daily</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "diary" %}
+                        <li><a href="/categories/diary" class="">일기 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
   </ul>
 </nav>
