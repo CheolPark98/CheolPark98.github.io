@@ -176,31 +176,35 @@
 #         c,x=c.split()
 #         f(str(c),int(x))
 
-from re import M
+# from re import M
 
 
-h,m,s=map(int,input().split())
-t=int(input())
+# h,m,s=map(int,input().split())
+# t=int(input())
 
-h+=t//3600
-m+=(t%3600)//60
-s+=(t%3600)%60
+# h+=t//3600
+# m+=(t%3600)//60
+# s+=(t%3600)%60
 
 
-if s>=60:
-    m+=1
-    s-=60
-if m>=60:
-    h+=1
-    m-=60
-if h>=24:
-    h-=24
-print(h,m,s)
+# if s>=60:
+#     m+=1
+#     s-=60
+# if m>=60:
+#     h+=1
+#     m-=60
+# if h>=24:
+#     h-=24
+# print(h,m,s)
 
-A, B, C = map(int, input().split())
-D = int(input())
-t = A*60*60 + B*60 + C + D
-h = t//60//60 % 24
-m = t//60 % 60
-s = t%60
-print(h, m, s)
+# A, B, C = map(int, input().split())
+# D = int(input())
+# t = A*60*60 + B*60 + C + D
+# h = t//60//60 % 24
+# m = t//60 % 60
+# # s = t%60
+# print(h, m, s)
+
+import datetime
+
+print(str(datetime.datetime.now())[:10])
