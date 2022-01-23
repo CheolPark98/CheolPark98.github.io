@@ -205,6 +205,29 @@
 # # s = t%60
 # print(h, m, s)
 
-import datetime
+# import datetime
 
-print(str(datetime.datetime.now())[:10])
+# print(str(datetime.datetime.now())[:10])
+
+# for i in range(int(input())):
+
+s=3.1444444
+
+print("%.4f입니다" % s)
+
+
+# for i in range(int(input())):
+#     b = list(map(str, input().split()))
+#     a=0
+#     for j in range(len(b)):
+#         if j==0:
+#             a+=float(b[j])
+#         else:
+#             if b[j]=="@":
+#                 a*=3
+#             elif b[j]=="%":
+#                 a+=5
+#             elif b[j]=="#":
+#                 a-=7
+#     print("%0.2f" %a)
+            
