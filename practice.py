@@ -211,9 +211,10 @@
 
 # for i in range(int(input())):
 
-s=3.1444444
+# s=3.1444444
 
-print("%.4f입니다" % s)
+# print("%.4f입니다" % s)
+
 
 
 # for i in range(int(input())):
@@ -230,4 +231,13 @@ print("%.4f입니다" % s)
 #             elif b[j]=="#":
 #                 a-=7
 #     print("%0.2f" %a)
-            
+
+a=int(input())
+b=input()
+c=int(input()) 
+
+
+if b=="+":
+    print(a+c)
+else:
+    print(a*c)

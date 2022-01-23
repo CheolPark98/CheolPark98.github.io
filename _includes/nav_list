@@ -19,6 +19,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python-grammar" %}
+                        <li><a href="/categories/boj-python" class="">파이썬 문법 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
       <li>
         <span class="nav__sub-title">daily</span>
