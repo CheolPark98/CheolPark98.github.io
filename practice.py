@@ -232,12 +232,16 @@
 #                 a-=7
 #     print("%0.2f" %a)
 
-a=int(input())
-b=input()
-c=int(input()) 
+# a=int(input())
+# b=input()
+# c=int(input()) 
 
 
-if b=="+":
-    print(a+c)
-else:
-    print(a*c)
+# if b=="+":
+#     print(a+c)
+# else:
+#     print(a*c)
+
+list1=['c','h','e','o','l','p','a','r','k',9,8]
+
+print(list1[::-1])
