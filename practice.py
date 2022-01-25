@@ -242,6 +242,6 @@
 # else:
 #     print(a*c)
 
-list1=['c','h','e','o','l','p','a','r','k',9,8]
+list1=['c','h','e','o','l','p','a','r','k',9,8,8]
 
-print(list1[::-1])
+print(list1.index(8))
