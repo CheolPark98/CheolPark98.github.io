@@ -242,7 +242,6 @@
 # else:
 #     print(a*c)
 
-list1=['c','h','e','o','l','p','a','r','k',9,8,8]
-
-list1.insert('c','d')
-print(list1)
+food = ['감자', '고구마', '계란', '파', '계란']
+food.pop()
+print(food)
