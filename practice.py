@@ -242,6 +242,19 @@
 # else:
 #     print(a*c)
 
-food = ['감자', '고구마', '계란', '파', '계란']
-food.pop()
-print(food)
+
+# a=list(map(int,input().split()))
+d = []
+for i in range(int(input())):
+    a, b, c = map(int, input().split())
+    if a == b == c:
+        d.append(10000+a*1000)
+    elif a == b:
+        d.append(1000+a*100)
+    elif a == c:
+        d.append(1000+a*100)
+    elif b == c:
+        d.append(1000+b*100)
+    else:
+        d.append(100 * max(a,b,c))
+print(max(d))
