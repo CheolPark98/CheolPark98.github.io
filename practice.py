@@ -244,17 +244,49 @@
 
 
 # a=list(map(int,input().split()))
-d = []
+# a = []
+# for i in range(int(input())):
+#     a.append(int(input()))
+# if a.count(0) > a.count(1):
+#     print("Junhee is not cute!")
+# else:
+#     print("Junhee is cute!")
+# c = 100
+# d = 100
+# for i in range(int(input())):
+#     a,b = map(int, input().split())
+#     if a > b:
+#         d -= a
+#     elif a < b:
+#         c -= b
+#     else:
+#         pass
+# print(c)
+# print(d)
+# b = []
+# for i in range(5):
+#     a = int(input())
+#     if a >= 40:
+#         b.append(a)
+#     elif a < 40:
+#         b.append(40)
+# print(sum(b)/5)
+# a=str(input())
+# b = 0
+# for i in range(len(a)):
+#     if i ==0:
+#         b+=10
+#     elif a[i] == a[i-1]:
+#         b+=5
+#     else:
+#         b+=10
+# print(b)
+
 for i in range(int(input())):
-    a, b, c = map(int, input().split())
-    if a == b == c:
-        d.append(10000+a*1000)
-    elif a == b:
-        d.append(1000+a*100)
-    elif a == c:
-        d.append(1000+a*100)
-    elif b == c:
-        d.append(1000+b*100)
-    else:
-        d.append(100 * max(a,b,c))
-print(max(d))
+    c ={}
+    for j in range(int(input)):
+        a,b=map(str, input().split())
+        c[a] = int(b)
+    print(max(c,key=c.get))    
+
+
