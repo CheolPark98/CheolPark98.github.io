@@ -282,11 +282,32 @@
 #         b+=10
 # print(b)
 
-for i in range(int(input())):
-    c ={}
-    for j in range(int(input)):
-        a,b=map(str, input().split())
-        c[a] = int(b)
-    print(max(c,key=c.get))    
+a= int(input())
+A=0
+B=0
+C=0
+while True:
+    if  a==0:
+        print(A,B,C)
+        break
+    if a<0:
+        print("-1")
+        break
+    if a>=300:
+        a-=300
+        A+=1
+    elif 300>a>=60:
+        a-=60
+        B+=1
+    elif 60>a>=10:
+        a-=10
+        C+=1
+    
+    
+    
 
+
+
+
+    
 
