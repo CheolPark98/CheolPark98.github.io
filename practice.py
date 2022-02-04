@@ -282,29 +282,32 @@
 #         b+=10
 # print(b)
 
-a= int(input())
-A=0
-B=0
-C=0
-while True:
-    if  a==0:
-        print(A,B,C)
-        break
-    if a<0:
-        print("-1")
-        break
-    if a>=300:
-        a-=300
-        A+=1
-    elif 300>a>=60:
-        a-=60
-        B+=1
-    elif 60>a>=10:
-        a-=10
-        C+=1
+# a= int(input())
+# A=0
+# B=0
+# C=0
+# while True:
+#     if  a==0:
+#         print(A,B,C)
+#         break
+#     if a<0:
+#         print("-1")
+#         break
+#     if a>=300:
+#         a-=300
+#         A+=1
+#     elif 300>a>=60:
+#         a-=60
+#         B+=1
+#     elif 60>a>=10:
+#         a-=10
+#         C+=1
+
+
     
     
-    
+name_and_ages = [['alice', 5], ['Bob', 13]]
+print(dict(name_and_ages))
 
 
 
