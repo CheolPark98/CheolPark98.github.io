@@ -306,11 +306,9 @@
 
     
     
-name_and_ages = [['alice', 5], ['Bob', 13]]
-print(dict(name_and_ages))
-
-
-
+a= list(map(int,input().split()))
+a.sort()
+print(a[0],a[1],a[2])
 
     
 
