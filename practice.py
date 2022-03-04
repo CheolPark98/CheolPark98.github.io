@@ -311,5 +311,10 @@
 #     c
 
 
-a = "Let\'s narrow the gap." 
-print(a.split())
+
+a=int(input())
+b=0
+for i in range():
+    c=int(input())
+    b+=c
+print(b-a+1)
