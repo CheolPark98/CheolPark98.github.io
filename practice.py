@@ -304,8 +304,13 @@
 #         C+=1
 
 
-a,b=map(int,input().split())
-c=0
-d=[]
-while True:
-    c
+# a,b=map(int,input().split())
+# c=0
+# d=[]
+# while True:
+#     c
+
+a = 'ww??14wLet\'s narrow the gap.145w?w'
+print(a.lstrip('w145?.'))
+print(a.rstrip('w145?.'))
+print(a.strip('w145?.'))
