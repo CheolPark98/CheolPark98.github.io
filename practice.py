@@ -304,11 +304,8 @@
 #         C+=1
 
 
-    
-    
-a= list(map(int,input().split()))
-a.sort()
-print(a[0],a[1],a[2])
-
-    
-
+a,b=map(int,input().split())
+c=0
+d=[]
+while True:
+    c

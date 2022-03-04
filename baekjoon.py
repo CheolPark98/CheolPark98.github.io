@@ -526,7 +526,85 @@
 #     b =" "*(5-i)+"*"*(2*i-1)
 #     print(b)
 
-n = int(input())
-for i in (n, 1):
-    b =" "*(5-i)+"*"*(2*i-1)
-    print(b)
+# n = int(input())
+# for i in (n, 1):
+#     b =" "*(5-i)+"*"*(2*i-1)
+#     print(b)
+
+# a = list(map(int, input().split()))
+# print(max(a),min(a))
+
+# a=int(input())
+# b=0
+# for i in range(9):
+#     c=int(input())
+#     b+=c
+# print(a-b)
+
+# a,b,c= map(int,input().split(":"))
+# d,e,f= map(int,input().split(":"))
+# now = a*3600+b*60+c
+# start = d*3600+e*60+f
+# g= 0
+# if now > start:
+#     g = 24 * 60 * 60 - (now - start)
+# else:
+#     g = start - now
+# h=g//3600
+# m=g//60%60
+# s=g%60
+# print(f'{h:02d}:{m:02d}:{s:02d}')
+
+# a=int(input())
+# for i in range(a):
+#     b= int(input())
+#     f = 0
+#     for j in range(int(input())):
+#         c,d=map(int,input().split)
+#         g=c*d
+#         f+=g
+#     print(b+f)
+
+# for i in range(int(input())):
+#     b=int(input())
+#     a=sum(list(map(int,input().split())))
+#     print(a)
+
+# a= str(input())
+# b= a.split()
+# print(b)
+
+# for i in range(int(input())):
+#     a,b=map(int,input().split())
+#     c=a//b
+#     d=a%b
+#     print("You get {} piece(s) and your dad gets {} piece(s).".format(c,d))
+
+# a=[]
+# for i in range(7):
+#     b=int(input())
+#     if b%2!=0:
+#         a.append(b)
+# if sum(a)!=0:        
+#     print(sum(a))
+#     print(min(a))
+# else:
+#     print("-1")
+
+# for i in range(int(input())):
+#     a,b=map(int,input().split())
+#     print(2+b-a)
+n=int(input())
+for i in range(n):
+    if i%2==0:
+        for j in range(n*2):
+            if j%2==0:
+                print('*',end='')
+            else:
+                print(' ',end='')
+    else:
+        for j in range(n*2):
+            if j%2==0:
+                print(' ',end='')
+            else:
+                print('*',end='')
