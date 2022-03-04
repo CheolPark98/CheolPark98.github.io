@@ -310,7 +310,6 @@
 # while True:
 #     c
 
-a = 'ww??14wLet\'s narrow the gap.145w?w'
-print(a.lstrip('w145?.L'))
-print(a.rstrip('w145?.'))
-print(a.strip('w145?.'))
+
+a = "Let\'s narrow the gap." 
+print(a.split())
