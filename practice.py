@@ -312,9 +312,6 @@
 
 
 
-a=int(input())
-b=0
-for i in range():
-    c=int(input())
-    b+=c
-print(b-a+1)
+# print("c","a","k","e",sep="*")
+# print("cake",sep="a")
+print("grapefruit"[4:])
