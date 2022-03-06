@@ -314,4 +314,6 @@
 
 # print("c","a","k","e",sep="*")
 # print("cake",sep="a")
-print("grapefruit"[4:])
+
+n = 10
+print("%f" % n)
