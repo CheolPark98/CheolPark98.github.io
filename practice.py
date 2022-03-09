@@ -315,5 +315,55 @@
 # print("c","a","k","e",sep="*")
 # print("cake",sep="a")
 
-n = 10
-print("%f" % n)
+# a=[]
+# for i in range(5):
+#     a.append(int(input()))
+# print(sum(a))
+
+# for i in range(int(input())):
+#     c=[]
+#     d=[]
+#     n=int(input())
+#     for j in range(n):
+#         a,b=map(float,input().split())
+#         c.append(int(a))
+#         d.append(b*a)
+#     e=sum(c)
+#     f=sum(d)/e
+#     print("{} {:.1f}".format(e,f))
+# c=[]
+# for i in range(int(input())):
+#     a,b=map(int,input().split())
+#     d=b%a
+#     c.append(d)
+# print(sum(c))
+
+# a=[]
+# for i in range(1,101):
+#     a.append(i*i)
+# b=int(input())
+# c=int(input())
+# d=[]
+# for j in range(b,c+1):
+#     if j in a:
+#         d.append(j)
+# if d == []:
+#     print("-1")
+# else:
+#     print(sum(d))
+#     print(min(d))
+
+# for i in range(int(input())):
+#     a={}
+#     for j in range(int(input())):
+#         b,c=map(str,input().split())
+#         a[c]=int(b)
+#     print(max(a, key=a.get))
+
+e={}
+for i in range(int(input())):
+    a,b,c,d=map(str,input().split())
+    e[a]=('%04d%02d%02d'%(int(d),int(c),int(b)))
+print(max(e, key=e.get)) 
+print(min(e, key=e.get)) 
+
