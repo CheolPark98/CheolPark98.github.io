@@ -315,5 +315,33 @@
 # print("c","a","k","e",sep="*")
 # print("cake",sep="a")
 
-n = 10
-print("%f" % n)
+# n = 10
+# print("%f" % n)
+
+# n = int(input())
+# 메모 = {0: 0, 1: 1, 2: 1}
+# def f(n):
+#     if n in 메모:
+#         return 메모[n-1]
+#     else:
+#         output = f(n-1) + f(n-2)
+#         메모[n] = output
+#         return output
+# print(f(
+
+# a=[]
+# b,c=map(int,input().split())
+# for i in range(1,b+1):
+#     if b%i==0:
+#         a.append(i)
+# if c>len(a):
+#     print(0)
+# else:
+#     print(a[c-1])
+
+# n=int(input())
+# a=[]
+# for i in range(n):
+#     a.append(str(input()))
+a=list(input())
+print(a)
