@@ -315,7 +315,6 @@
 # print("c","a","k","e",sep="*")
 # print("cake",sep="a")
 
-<<<<<<< HEAD
 # n = 10
 # print("%f" % n)
 
@@ -324,78 +323,10 @@
 # def f(n):
 #     if n in 메모:
 #         return 메모[n-1]
-=======
-# a=[]
-# for i in range(5):
-#     a.append(int(input()))
-# print(sum(a))
-
-# for i in range(int(input())):
-#     c=[]
-#     d=[]
-#     n=int(input())
-#     for j in range(n):
-#         a,b=map(float,input().split())
-#         c.append(int(a))
-#         d.append(b*a)
-#     e=sum(c)
-#     f=sum(d)/e
-#     print("{} {:.1f}".format(e,f))
-# c=[]
-# for i in range(int(input())):
-#     a,b=map(int,input().split())
-#     d=b%a
-#     c.append(d)
-# print(sum(c))
-
-# a=[]
-# for i in range(1,101):
-#     a.append(i*i)
-# b=int(input())
-# c=int(input())
-# d=[]
-# for j in range(b,c+1):
-#     if j in a:
-#         d.append(j)
-# if d == []:
-#     print("-1")
-# else:
-#     print(sum(d))
-#     print(min(d))
-
-# for i in range(int(input())):
-#     a={}
-#     for j in range(int(input())):
-#         b,c=map(str,input().split())
-#         a[c]=int(b)
-#     print(max(a, key=a.get))
-
-# e={}
-# for i in range(int(input())):
-#     a,b,c,d=map(str,input().split())
-#     e[a]=('%04d%02d%02d'%(int(d),int(c),int(b)))
-# print(max(e, key=e.get)) 
-# print(min(e, key=e.get)) 
-
-# a={1:1,2:1}
-# def f(n):
-#     if n in a:
-#         return a[n]
-#     else:
-#         c= f(n-1) + f(n-2)
-#         a[n] = c
-#         return c
-# print(f(int(input())))
-# 메모 = { 1: 1, 2: 1}
-# def f(n):
-#     if n in 메모:
-#         return 메모[n]
->>>>>>> cb848e70739674e4ffcd9966027785fb3f6d86ad
 #     else:
 #         output = f(n-1) + f(n-2)
 #         메모[n] = output
 #         return output
-<<<<<<< HEAD
 # print(f(
 
 # a=[]
@@ -411,77 +342,17 @@
 # n=int(input())
 # a=[]
 # for i in range(n):
-#     a.append(str(input()))
-a=list(input())
-print(a)
-=======
-# print(f(3))
-
-# sum=0
-# result=0
+# #     a.append(str(input()))
 # n=int(input())
-# a=list(map(int,input().split()))
-# for i in range(n):
-#     if a[i]==1:
-#         sum+=1
-#         result+=sum
-#     else:
-#         sum=0
-# print(result)
-# m,n=map(int(input()))
-# a=[]
-# for i in range(m,n+1):
-#     for j in range(2,i+1):
-#         if i%jc
+# a=list(input())
+# for i in range(n-1):
+#     b=list(input())
+#     for j in range(len(a)):
+#         if a[j]!=b[j]:
+#             a[j]='?'
+# print(''.join(a))           
 
-# a=2
-# b=3
-# c=1
-
-# d=a
-# a=b
-# b=c
-# c=d
-
-# print(a)
-# print(b)
-# print(c)
-# print(d)
+from distutils.command.install import install
 
 
-# result=0
-# result+=1
-# result+=2
-# result+=3
-# result+=4
-# result+=5
-# print("result = {}".format(result))
-
-# n1 = int(input())
-# n2 = int(input())
-# n3 = n1
-# n1 = n2
-# n2 = n3
-# print("n1 = {}".format(n1))
-# print("n2 = {}".format(n2))
-
-# n = int(input())
-# print("before = {}".format(n))
-# print("after = {}".format(int(n/10*9)))
-
-# a=str(input())
-# b=int(input())
-# print(a*b)
-
-# a=int(input())
-# print("x {}".format(a))
-# for i in range(1,10):
-#     print("{} x {} = {}".format(a,i,a*i))
-n= int(input())
-a= n//86400
-b= (n%86400)//3600
-c= ((n%86400)%3600)//60
-d= ((n%86400)%3600)%60
-
-print('%d days %02d:%02d:%02d'%(a,b,c,d))
->>>>>>> cb848e70739674e4ffcd9966027785fb3f6d86ad
+pip3 install tensor

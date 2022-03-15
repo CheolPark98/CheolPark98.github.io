@@ -470,16 +470,16 @@
 # #     print(' '*(n-i)+'*'*i) 
 
 # #백준10870 피보나치 수
-# # n = int(input())
-# # 메모 = {0: 0, 1: 1, 2: 1}
-# # def f(n):
-# #     if n in 메모:
-# #         return 메모[n]
-# #     else:
-# #         output = f(n-1) + f(n-2)
-# #         메모[n] = output
-# #         return output
-# # print(f(n))
+# n = int(input())
+# 메모 = {0: 0, 1: 1, 2: 1}
+# def f(n):
+#     if n in 메모:
+#         return 메모[n-1]
+#     else:
+#         output = f(n-1) + f(n-2)
+#         메모[n] = output
+#         return output
+# print(f(n))
 
 # 백준11721 10개씩 끊어 출력하기
 # a = input()
@@ -594,17 +594,28 @@
 # for i in range(int(input())):
 #     a,b=map(int,input().split())
 #     print(2+b-a)
-n=int(input())
-for i in range(n):
-    if i%2==0:
-        for j in range(n*2):
-            if j%2==0:
-                print('*',end='')
-            else:
-                print(' ',end='')
+# n=int(input())
+# for i in range(n):
+#     if i%2==0:
+#         for j in range(n*2):
+#             if j%2==0:
+#                 print('*',end='')
+#             else:
+#                 print(' ',end='')
+#     else:
+#         for j in range(n*2):
+#             if j%2==0:
+#                 print(' ',end='')
+#             else:
+#                 print('*',end='')
+
+n = int(input())
+메모 = {0: 0, 1: 1, 2: 1}
+def f(n):
+    if n in 메모:
+        return 메모[n-1]
     else:
-        for j in range(n*2):
-            if j%2==0:
-                print(' ',end='')
-            else:
-                print('*',end='')
+        output = f(n-1) + f(n-2)
+        메모[n] = output
+        return output
+print(f(n))
